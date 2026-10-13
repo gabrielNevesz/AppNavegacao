@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Perfil::class.java);
             startActivity(intent);
         }
+
+        jogos.setOnClickListener {
+            val intent = Intent(this, Jogos::class.java)
+        }
     }
 }
