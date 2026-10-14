@@ -1,5 +1,6 @@
 package com.example.appnavegacao
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -18,7 +19,11 @@ class Jogos : AppCompatActivity() {
             insets
         }
 
-        voltar = findViewById<Button>(R.id.btnVoltar)
-        
+        val voltar = findViewById<Button>(R.id.btnVoltar);
+
+        voltar.setOnClickListener {
+           val intent = Intent(this, MainActivity::class.java);
+            startActivity(intent);
+        }
     }
 }
