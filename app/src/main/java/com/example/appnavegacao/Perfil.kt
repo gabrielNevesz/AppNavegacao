@@ -18,9 +18,9 @@ class Perfil : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val voltar = findViewById<Button>(R.id.btnPerfil);
+        val voltarPerfil = findViewById<Button>(R.id.VoltarPerfil)
 
-        voltar.setOnClickListener {
+        voltarPerfil.setOnClickListener {
             val intetnt = Intent(this, MainActivity::class.java);
             startActivity(intent);
         }

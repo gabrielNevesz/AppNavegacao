@@ -29,7 +29,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         jogos.setOnClickListener {
-            val intent = Intent(this, Jogos::class.java)
+            val intent = Intent(this, Jogos::class.java);
+        }
+
+        configuracoes.setOnClickListener {
+            val intent = Intent(this,configuracoes::class.java);
+        }
+
+        sobre.setOnClickListener {
+            val intent = Intent(this, sobre::class.java);
         }
     }
 }
